@@ -56,7 +56,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="pages\BasePage.cs" />
+    <Compile Include="pages\HomePage.cs" />
     <Compile Include="pages\LoginPage.cs" />
+    <Compile Include="pages\UserDashboard.cs" />
     <Compile Include="tests\BaseTest.cs" />
     <Compile Include="tests\LoginTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

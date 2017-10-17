@@ -20,6 +20,7 @@ namespace Sample.tests
             if(Driver == null)
             {
                 Driver = new ChromeDriver();
+               // Driver.Manage().Window.FullScreen();
             }
        
 

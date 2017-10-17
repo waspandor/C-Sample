@@ -9,12 +9,21 @@ namespace Sample
     [TestClass]
     public class LoginTests : BaseTest
     {
+
+        String username = "waspandor";
+        String password = "treble99";
+
         [TestMethod]
         public void TestOne()
         {
 
-            LoginPage login = new LoginPage(Driver);
-            login.GoTo().GoToSports();
+            HomePage login = new HomePage(Driver);
+            login.
+                GoTo().
+                clickSignIn().
+                enterUsername(username).
+                enterPassword(password).
+                LoginWithDetails();
 
         }
 
