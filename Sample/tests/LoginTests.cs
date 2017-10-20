@@ -10,20 +10,18 @@ namespace Sample
     public class LoginTests : BaseTest
     {
 
-        String username = "waspandor";
-        String password = "treble99";
+        HomePage homePage;
 
         [TestMethod]
         public void TestOne()
         {
 
-            HomePage login = new HomePage(Driver);
-            login.
-                GoTo().
-                clickSignIn().
-                enterUsername(username).
-                enterPassword(password).
-                LoginWithDetails();
+            homePage = new HomePage(Driver);
+            homePage.
+                goToHomePage().
+                useTopNav().
+                search("pakistan");
+      
 
         }
 

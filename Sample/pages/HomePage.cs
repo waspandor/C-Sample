@@ -13,22 +13,14 @@ namespace Sample.pages
         {
         }
 
-        public HomePage GoTo()
+        public HomePage goToHomePage()
         {
-            Driver.Navigate().GoToUrl("https://github.com/");
-            Driver.Manage().Window.Maximize();
-
+            Driver.Navigate().GoToUrl(baseUrl);
             return new HomePage(Driver);
+            
 
         }
 
-
-        public LoginPage clickSignIn()
-        {
-            Driver.FindElement(By.LinkText("Sign in")).Click();
-
-            return new LoginPage(Driver);
-        }
 
     }
     }

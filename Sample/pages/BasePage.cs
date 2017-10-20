@@ -10,14 +10,22 @@ namespace Sample.pages
    public class BasePage
     {
 
+        public String baseUrl = "https://bbc.com/";
+
         public BasePage (IWebDriver driver)
         {
             Driver = driver;
+            Driver.Manage().Window.Maximize();
+
         }
 
         public IWebDriver Driver { get; set; }
 
 
+        public TopNavBar useTopNav()
+        {
+            return new TopNavBar(Driver);
+        }
 
     }
 }

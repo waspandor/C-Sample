@@ -56,9 +56,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="pages\BasePage.cs" />
+    <Compile Include="pages\SearchResultsPage.cs" />
+    <Compile Include="pages\Sports\FootballPage.cs" />
     <Compile Include="pages\HomePage.cs" />
-    <Compile Include="pages\LoginPage.cs" />
-    <Compile Include="pages\UserDashboard.cs" />
+    <Compile Include="pages\News\NewsPage.cs" />
+    <Compile Include="pages\Sports\ScoresFixturesPage.cs" />
+    <Compile Include="pages\Sports\SportsPage.cs" />
+    <Compile Include="pages\TopNavBar.cs" />
+    <Compile Include="pages\Weather\WeatherPage.cs" />
     <Compile Include="tests\BaseTest.cs" />
     <Compile Include="tests\LoginTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

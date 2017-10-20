@@ -12,6 +12,7 @@ namespace Sample.tests
     [TestClass]
     public class BaseTest
     {
+
         protected static  IWebDriver Driver { get; private set; }
 
         public BaseTest()
