@@ -2,7 +2,7 @@
 
 namespace Sample.pages
 {
-    public class FootballPage : BasePage
+    public class FootballPage : SportsPage
 
 
     {
@@ -14,9 +14,13 @@ namespace Sample.pages
         public ScoresFixturesPage goToScoresFixturesPage()
         {
             Driver.FindElement(By.LinkText("Scores & Fixtures")).Click();
-
-
             return new ScoresFixturesPage(Driver);
+        }
+
+        public TablesPage goToTablesPage()
+        {
+            Driver.FindElement(By.LinkText("Tables")).Click();
+            return new TablesPage(Driver);
         }
 
     }

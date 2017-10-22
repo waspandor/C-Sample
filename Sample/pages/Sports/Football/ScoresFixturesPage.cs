@@ -2,7 +2,7 @@
 
 namespace Sample.pages
 {
-    public class ScoresFixturesPage : BasePage
+    public class ScoresFixturesPage : FootballPage
     {
 
         public ScoresFixturesPage(IWebDriver driver) : base(driver)

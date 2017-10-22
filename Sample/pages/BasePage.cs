@@ -22,9 +22,33 @@ namespace Sample.pages
         public IWebDriver Driver { get; set; }
 
 
-        public TopNavBar useTopNav()
+        public SportsPage goToSportsPage()
         {
-            return new TopNavBar(Driver);
+            Driver.FindElement(By.LinkText("Sport")).Click();
+            return new SportsPage(Driver);
+        }
+
+        public NewsPage goToNewsPage()
+        {
+            Driver.FindElement(By.LinkText("News")).Click();
+            return new NewsPage(Driver);
+        }
+
+        public WeatherPage goToWeatherPage()
+        {
+            Driver.FindElement(By.LinkText("Weather")).Click();
+            return new WeatherPage(Driver);
+        }
+
+        public SearchResultsPage search(String searchTerm)
+
+
+        {
+            Driver.FindElement(By.Id("orb-search-q")).SendKeys(searchTerm);
+            //   Driver.FindElement(By.Id("se-searchbox-input-field")).SendKeys(searchTerm);
+            Driver.FindElement(By.ClassName("se-searchbox__submit")).Click();
+
+            return new SearchResultsPage(Driver);
         }
 
     }

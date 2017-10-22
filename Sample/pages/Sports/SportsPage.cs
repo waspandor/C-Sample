@@ -18,9 +18,13 @@ namespace Sample.pages
         }
 
 
-        
-
-
+        public Formula1Page goToFormula1Page()
+        {
+            Driver.FindElement(By.LinkText("Formula 1")).Click();
+            return new Formula1Page(Driver);
         }
+
+
+    }
 
     }

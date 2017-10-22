@@ -19,8 +19,11 @@ namespace Sample
             homePage = new HomePage(Driver);
             homePage.
                 goToHomePage().
-                useTopNav().
-                search("pakistan");
+                goToSportsPage().
+                goToFootballPage().
+                goToScoresFixturesPage().
+                goToFormula1Page().
+                goToWeatherPage();
       
 
         }
